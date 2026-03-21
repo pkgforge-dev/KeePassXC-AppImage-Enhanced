@@ -10,7 +10,8 @@ pacman -Syu --noconfirm \
 	keepassxc   \
 	kvantum-qt5 \
 	pcsclite    \
-	qt5ct
+	qt5ct       \
+	qt5-wayland
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
