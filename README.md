@@ -15,7 +15,7 @@
 | :---: | :---: |
 | [Click here](https://github.com/pkgforge-dev/KeePassXC-AppImage-Enhanced/releases/latest) | [Click here](https://github.com/keepassxreboot/keepassxc) |
 
-Improved AppImage of KeePassCX **independent of the host libc** making it able to work on very very old distros as well as musl-libc distros like alpine linux.
+Improved AppImage of KeePassXC **independent of the host libc** making it able to work on very very old distros as well as musl-libc distros like alpine linux.
 
 </div>
 
