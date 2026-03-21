@@ -12,6 +12,10 @@ export ICON=/usr/share/icons/hicolor/256x256/apps/keepassxc.png
 export DESKTOP=/usr/share/applications/org.keepassxc.KeePassXC.desktop
 export ALWAYS_SOFTWARE=1
 
+# on archlinux qt5-wayland also adds the server side plugins
+# remove them so that they do not get deployed
+rm -rf /usr/lib/qt/plugins/wayland-graphics-integration-server
+
 # Deploy dependencies
 quick-sharun \
 	/usr/bin/keepassxc* \
