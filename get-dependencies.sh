@@ -6,7 +6,11 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm keepassxc qt5ct kvantum-qt5
+pacman -Syu --noconfirm \
+	keepassxc   \
+	kvantum-qt5 \
+	pcsclite    \
+	qt5ct
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"

@@ -10,9 +10,13 @@ export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/icons/hicolor/256x256/apps/keepassxc.png
 export DESKTOP=/usr/share/applications/org.keepassxc.KeePassXC.desktop
+export ALWAYS_SOFTWARE=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/keepassxc* /usr/lib/keepassxc
+quick-sharun \
+	/usr/bin/keepassxc* \
+	/usr/lib/keepassxc  \
+	/usr/lib/libpcsclite_real.so*
 
 # Additional changes can be done in between here
 
