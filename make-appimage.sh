@@ -10,11 +10,7 @@ export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/icons/hicolor/256x256/apps/keepassxc.png
 export DESKTOP=/usr/share/applications/org.keepassxc.KeePassXC.desktop
-export ALWAYS_SOFTWARE=1
-
-# on archlinux qt5-wayland also adds the server side plugins
-# remove them so that they do not get deployed
-rm -rf /usr/lib/qt/plugins/wayland-graphics-integration-server
+export USE_HOST_DRIVERS_EXPERIMENTAL=1
 
 # Deploy dependencies
 quick-sharun \
