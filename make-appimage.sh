@@ -15,7 +15,6 @@ export USE_HOST_DRIVERS_EXPERIMENTAL=1
 # Deploy dependencies
 quick-sharun \
 	/usr/bin/keepassxc* \
-	/usr/lib/keepassxc  \
 	/usr/lib/libpcsclite_real.so*
 
 # Additional changes can be done in between here
